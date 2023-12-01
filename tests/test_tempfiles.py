@@ -1,4 +1,4 @@
-from src.tempfiles import TempFiles
+from tempf import TempFiles
 
 
 # noinspection PyUnusedLocal

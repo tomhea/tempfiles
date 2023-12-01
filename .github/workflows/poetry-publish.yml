@@ -1,4 +1,4 @@
-# This workflow will upload the tempfiles python package to pypi, using poetry-publish, everytime a new release is created.
+# This workflow will upload the tempf python package to pypi, using poetry-publish, everytime a new release is created.
 
 
 name: Upload python package

@@ -1,9 +1,9 @@
-# tempfiles
+# tempf - TempFiles
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tomhea/tempfiles)](https://github.com/tomhea/tempfiles)
 [![GitHub](https://img.shields.io/github/license/tomhea/flip-jump)](LICENSE)
-[![PyPI - Version](https://img.shields.io/pypi/v/tempfiles)](https://pypi.org/project/tempfiles/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/tempfiles)](https://pypi.org/project/tempfiles/)
+[![PyPI - Version](https://img.shields.io/pypi/v/tempf)](https://pypi.org/project/tempf/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/tempf)](https://pypi.org/project/tempf/)
 
 
 Multiple temporary files in 1 line of code. 
@@ -11,7 +11,7 @@ Multiple temporary files in 1 line of code.
 TempFiles(X) returns a tuple of X non-used paths.
 
 ```python
-from tempfiles import TempFiles
+from tempf import TempFiles
 
 with TempFiles(3) as (path1, path2, path3):
     with path1.open('w') as file1:
@@ -21,7 +21,7 @@ with TempFiles(3) as (path1, path2, path3):
 
 ## Install
 ```
->>> pip install tempfiles
+>>> pip install tempf
 ```
 
 
@@ -30,7 +30,7 @@ Compilation process:
 
 ```python
 from pathlib import Path
-from src import TempFiles
+from tempf import TempFiles
 
 
 def compile_run_and_check_output(code_path: Path, expected_output: str) -> bool:

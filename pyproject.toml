@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry]
-name = "tempfiles"
+name = "tempf"
 version = "1.0.0"
 description = "Multiple temporary files in 1 line of code"
 authors = ["Tom Herman <flipjumpproject@gmail.com>"]
