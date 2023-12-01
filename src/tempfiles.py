@@ -24,7 +24,7 @@ class TempFiles:
         self._temporary_directory = TemporaryDirectory(prefix='tom')  # A bit of temporary credit to myself :)
         directory_path = Path(self._temporary_directory.__enter__())
 
-        return tuple(directory_path / f'file{file_index}' for file_index in range(self._number_of_files))
+        return tuple(directory_path / 'file{}'.format(file_index) for file_index in range(self._number_of_files))
 
     def __exit__(self, exc_type, exc_val, exc_tb) -> None:
         """

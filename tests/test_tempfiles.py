@@ -1,6 +1,7 @@
 from src.tempfiles import TempFiles
 
 
+# noinspection PyUnusedLocal
 def test_sanity() -> None:
     """
     Test that TempFiles(3) actually parses.

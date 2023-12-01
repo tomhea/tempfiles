@@ -1,5 +1,11 @@
 # tempfiles
 
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tomhea/tempfiles)](https://github.com/tomhea/tempfiles)
+[![GitHub](https://img.shields.io/github/license/tomhea/flip-jump)](LICENSE)
+[![PyPI - Version](https://img.shields.io/pypi/v/tempfiles)](https://pypi.org/project/tempfiles/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/tempfiles)](https://pypi.org/project/tempfiles/)
+
+
 Multiple temporary files in 1 line of code. 
 
 TempFiles(X) returns a tuple of X non-used paths.
@@ -40,7 +46,7 @@ def compile_run_and_check_output(code_path: Path, expected_output: str) -> bool:
             return False
 
         run_compiled(executable_path, log=run_log_path, run_output=run_output_path)
-        if not is_run_log_ok(run_log_path)
+        if not is_run_log_ok(run_log_path):
             return False
 
         with run_output_path.open('r') as output_file:
