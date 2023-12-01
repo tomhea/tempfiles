@@ -17,8 +17,6 @@ keywords = ["esolang", "oisc", "assembly"]
 classifiers = [
     "Topic :: Software Development :: Libraries",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.5",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
@@ -31,10 +29,10 @@ classifiers = [
 
 
 [tool.poetry.dependencies]
-python = "^3.5"
+python = "^3.7"
 
 # developement
-pytest = { version = "^7.4.0", optional = true }
+pytest = { version = "^7.4.3", optional = true }
 
 [tool.poetry.extras]
 tests = ["pytest"]
